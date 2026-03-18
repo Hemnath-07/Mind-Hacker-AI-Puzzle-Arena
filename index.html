@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mind Hacker: AI Puzzle Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="glow">🧠 Mind Hacker: Battle Arena</h1>
+
+    <div class="stats">
+        <div>❤️ Player: <span id="playerHealth">100</span></div>
+        <div>🤖 AI: <span id="enemyHealth">100</span></div>
+        <div>🔥 Combo: <span id="combo">0</span></div>
+    </div>
+
+    <div class="question-box">
+        <h2 id="question"></h2>
+        <input id="answer" type="number" placeholder="Enter answer..." autofocus>
+        <button onclick="submitAnswer()">⚔️ Submit</button>
+    </div>
+
+    <p id="result"></p>
+
+    <div class="bottom">
+        ⏱ Time: <span id="timer">10</span> |
+        🎯 Score: <span id="score">0</span>
+    </div>
+
+</div>
+
+<!-- Sounds -->
+<audio id="hit" src="https://assets.mixkit.co/sfx/preview/mixkit-arcade-game-jump-coin-216.wav"></audio>
+<audio id="wrong" src="https://assets.mixkit.co/sfx/preview/mixkit-player-losing-or-failing-2042.wav"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
